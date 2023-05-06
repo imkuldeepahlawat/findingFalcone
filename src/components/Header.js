@@ -5,7 +5,7 @@ import "./Header.css";
  */
 const Header = () => {
     // {/* finding falcone! <reset | geetktrust home> */}
-    console.log("Header Loaded");
+    // console.log("Header Loaded");
     return (
         <div className="header">
             <div className="header_heading">
