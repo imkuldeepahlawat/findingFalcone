@@ -1,3 +1,30 @@
 .hero{
     border: 2px solid green;
 }
+.hero-container{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    /* align-items: center; */
+}
+.hero-container h2{
+    font-size: 2rem;
+    padding-left: 200px;
+}
+.dropDown_container{
+    justify-content: space-between;
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.timeCounter{
+    font-size: 30px;
+}
+.dropdownElement{
+    display: flex;
+    flex-direction: column;
+}

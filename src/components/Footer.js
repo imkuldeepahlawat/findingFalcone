@@ -6,7 +6,13 @@ const Footer = () => {
   return (
     <div className="footer">
       <p className="footer-text">
-        Coding problem - <a target="_blank" href="https://www.geektrust.com/coding/detailed/space">www.geektrust.in/finding-falcone</a>
+        Coding problem -{" "}
+        <a
+          target="_blank"
+          href="https://www.geektrust.com/coding/detailed/space"
+        >
+          www.geektrust.in/finding-falcone
+        </a>
       </p>
     </div>
   );
