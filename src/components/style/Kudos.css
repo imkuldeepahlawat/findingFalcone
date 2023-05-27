@@ -1,0 +1,21 @@
+.kudos{
+    background-image: url(https://media.istockphoto.com/id/539196040/video/stars-in-the-sky-looped-animation-beautiful-night-with-twinkling-flares.jpg?b=1&s=640x640&k=20&c=pR17qMvIm9f_kU-FRibXtFSBORW4ziMsVJpHoBDeg1Q=);
+    width: 1350px;
+    height: 900px;
+    z-index: -100;
+    padding-top: 10px;
+}
+.kudosbox{
+    background-color: #13253A;
+    width: 500px;
+    border: 1px solid #13253A;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6;
+    border-radius: 3%;
+    box-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,21 @@
+.link {
+  font-weight: 700;
+  text-decoration: none;
+  color: #45c09f;
+}
+
+#homeLink:hover{
+  cursor: pointer;
+}
+.link:focus {
+  color: #00a278;
+}
+
+.link:active {
+  color: #45c09f;
+}
+
+
+.link:hover {
+  cursor: pointer;
+}
