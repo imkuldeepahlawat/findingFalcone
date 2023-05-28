@@ -51,7 +51,7 @@ export default function KudosOnFind() {
             style={{}}
           />
           <h3 style={{ color: "white", fontSize: "25px" }}>
-            Congratulations! You totally nailed it! Totally. Super job!
+           Success Congratulations on Finding Falcone King Shan is mightypleased.
           </h3>
           <h3 style={{ color: "white", fontSize: "20px" }}>
             Found on{" "}
