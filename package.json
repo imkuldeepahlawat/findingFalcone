@@ -3,39 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-=======
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.2",
->>>>>>> master
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
-<<<<<<< HEAD
-    "classnames": "^2.3.2",
-    "formik": "^2.2.9",
-    "moment": "^2.29.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.8.0",
-    "react-redux": "^8.0.5",
-    "react-router": "^6.11.1",
-    "react-router-dom": "^6.11.1",
-    "react-scripts": "5.0.1",
-    "redux": "^4.2.1",
-    "web-vitals": "^2.1.4",
-    "yup": "^1.1.1"
-=======
     "notistack": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
->>>>>>> master
   },
   "scripts": {
     "start": "react-scripts start",
