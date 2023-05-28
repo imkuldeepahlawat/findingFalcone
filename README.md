@@ -27,6 +27,8 @@ Install dependencies
   npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
   npm install axios
   npm install notistack
+  npm install react-router-dom
+
 ```
 
 Start the server
@@ -38,7 +40,7 @@ Start the server
 
 ## Feedback
 
-If you have any feedback, please reach out to us at contact.kuldeepahlawat.com
+If you have any feedback, please reach out to us at contact.kuldeepahlawat@gmail.com
 
 
 ## Screenshots
