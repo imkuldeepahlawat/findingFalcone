@@ -7,6 +7,7 @@ import NotFound from "./components/pagenotfound/PageNotFound";
 import Home from "./components/Home/Home";
 import Problem from "./components/problem/Problem";
 import KudosOnFind from "./components/kudos/KudosOnFind";
+import SearchFailed from "./components/searchfailed/SearchFailed";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route  path="/Problem" element={<Problem />} />
         <Route  path="/Kudos" element={<KudosOnFind />} />
         <Route  path="/PageNotFound" element={<NotFound />} />
+        <Route  path="/Failed" element={<SearchFailed />} />
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
       <Footer />

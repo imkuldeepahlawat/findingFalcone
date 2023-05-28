@@ -58,9 +58,17 @@ If you have any feedback, please reach out to us at contact.kuldeepahlawat.com
 
 ![](https://github.com/imkuldeepahlawat/findingFalcone/assets/84150035/5eb84281-2e79-4238-a5be-1d7555bfbe3a)
 
+### While Searching
+
+![](https://github.com/imkuldeepahlawat/findingFalcone/assets/84150035/6fc032c2-de9e-4700-9686-0c4c4cfbf057)
+
 ### Succesfully Find
 
 ![](https://github.com/imkuldeepahlawat/findingFalcone/assets/84150035/ed633c9c-84c5-4aec-8e72-be671fd969d5)
+
+### Game Over
+
+![](https://github.com/imkuldeepahlawat/findingFalcone/assets/84150035/14128be6-0058-4aba-9df8-44d4bbc87c5a)
 
 ### On 404 Error || other issues
 

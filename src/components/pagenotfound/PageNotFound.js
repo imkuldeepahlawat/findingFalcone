@@ -3,6 +3,11 @@ import "../style/PageNotFound.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import HomeIcon from '@mui/icons-material/Home';
+
+/**
+ * Renders the NotFound component.
+ * Displays a page not found message with options to go back to the home page or play.
+ */
 const NotFound = () => {
   return (
     <div className="not-found">

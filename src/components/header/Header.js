@@ -1,22 +1,26 @@
 import React from "react";
-// import "../style/Header.css";
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 
-/*
-@param {String
+/**
+ * Renders the header component.
  */
 export default function Header() {
-  // {/* finding falcone! <reset | geetktrust home> */}
-  // console.log("Header Loaded");
+  /**
+   * Handles the click event on the home link.
+   */
+  const handleHomeLinkClick = () => {
+    localStorage.clear();
+    window.location.href = "/";
+  };
+
   return (
     <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-      <h1 id="homeLink"
+      <h1
+        id="homeLink"
         sx={{ marginLeft: "15px" }}
-        onClick={() => {
-          window.location.href = "/";
-        }}
+        onClick={handleHomeLinkClick}
       >
         Finding Falcone
       </h1>
@@ -26,7 +30,7 @@ export default function Header() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button variant="text" sx={{ color: "black", fontSize: "20px",color:"green" }}>
+          <Button variant="text" sx={{ color: "black", fontSize: "20px", color: "green" }}>
             GeekTrust Home
           </Button>
         </a>

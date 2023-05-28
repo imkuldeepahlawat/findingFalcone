@@ -1,4 +1,3 @@
-import SelectVehicle from "../selectVehicle/SelectVehicle";
 import * as React from "react";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -8,27 +7,40 @@ import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
 import Stack from "@mui/material/Stack";
 
+/**
+ * Renders the SelectPlanet component.
+ * Displays a dropdown menu to select a planet and shows a success alert if a planet is selected.
+ *
+ * @param {Object} props - The component props.
+ * @param {number} props.idx - The index of the component instance.
+ * @param {Object[]} props.state - The state object containing selected planets and distances.
+ * @param {function} props.setState - The function to update the state object.
+ * @param {string} props.uniqueId - The unique identifier for the component instance.
+ */
 const SelectPlanet = (props) => {
   const [tempPlanet, setTempPlanet] = React.useState("");
 
+  /**
+   * Handles the change event of the planet dropdown.
+   * Updates the temporary planet state.
+   *
+   * @param {object} event - The event object.
+   */
   const tempHandleChange = (event) => {
     setTempPlanet(event.target.value);
   };
 
   const { idx, state, setState, uniqueId } = props;
-  // console.log(state);
+
   return (
     <div>
       {state.selectedList[idx].planet !== "" && (
         <Alert severity="success">
           <AlertTitle>Selected {state.selectedList[idx].planet}</AlertTitle>
-          <strong>Distance:{state.selectedList[idx].distance}</strong>
+          <strong>Distance: {state.selectedList[idx].distance}</strong>
         </Alert>
       )}
-      {/* ********************
-                  Planet part
-                  ************************* */}
-      {/* <h3>Destination {idx + 1}</h3> */}
+
       <FormControl
         variant="filled"
         sx={{ m: 1, minWidth: 120 }}
@@ -39,7 +51,6 @@ const SelectPlanet = (props) => {
           value={tempPlanet}
           labelId={`${idx}label`}
           id={`planet${idx}`}
-          // seting new planet as destiantion
           onChange={(e) => {
             setState({
               task: "selectedListPlanet",
@@ -51,9 +62,7 @@ const SelectPlanet = (props) => {
           <MenuItem value="-">
             <em>None</em>
           </MenuItem>
-          {/**
-                    planet List show
-                     */}
+
           {state.planetList
             .filter(
               (planet) =>
@@ -62,7 +71,9 @@ const SelectPlanet = (props) => {
                 )
             )
             .map((planet) => (
-              <MenuItem value={planet.name}>{`${planet.name}`}</MenuItem>
+              <MenuItem key={planet.name} value={planet.name}>
+                {`${planet.name}`}
+              </MenuItem>
             ))}
         </Select>
       </FormControl>
