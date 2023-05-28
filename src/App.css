@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+<<<<<<< HEAD
 }
 
 .App-logo {
@@ -36,3 +37,9 @@
     transform: rotate(360deg);
   }
 }
+=======
+  margin-left: 10px;
+  margin-right: 2px;
+}
+
+>>>>>>> master

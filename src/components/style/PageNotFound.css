@@ -1,0 +1,36 @@
+.astronaut {
+    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--yV2D4goT--/c_imagga_scale,f_auto,fl_progressive,h_420,q_66,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/3jqj2huybwagtla8ogad.gif");
+    background-repeat: no-repeat;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size:contain;
+    height: 500px;
+    z-index: -100;
+    /* border-radius: %; */
+    position: relative;
+}
+.textHome{
+    position: absolute;
+    right: 50%;
+    left:20%;
+    top: 50%;
+    bottom: 50%;
+    
+}
+.textHome:hover{
+    scale: 1.1;
+    transition: 400ms;
+}
+.textPlay{
+    position: absolute;
+    right: 20%;
+    left:50%;
+    top: 50%;
+    bottom: 50%;
+    
+}
+.textPlay:hover{
+    scale: 1.1;
+    transition: 400ms;
+}
