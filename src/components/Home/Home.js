@@ -28,7 +28,7 @@ export default function Home() {
           />
           Help King Shan to choose the planets to search, and the vehicles to
           use in
-          <Link className="link" to="/Problem" sx={{ textDecoration: "none" }}>
+          <Link className="link" to="/problem" sx={{ textDecoration: "none" }}>
             <Button sx={{ fontFamily: "sans-serif", fontSize: "25px" }}>
               {" "}
               Finding falcone

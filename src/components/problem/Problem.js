@@ -23,97 +23,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 
-// function reducer(state, action) {
-//   switch (action.task) {
-//     case "selectedListPlanet":
-//       const { planetName, indx } = action;
 
-//       if (planetName !== "-") {
-//         const tPlanet = state.planetList.find(
-//           (item) => item.name === planetName
-//         );
-//         return {
-//           ...state,
-//           selectedList: state.selectedList.map((item, index) =>
-//             index === action.index
-//               ? { ...item, planet: tPlanet.name, distance: tPlanet.distance }
-//               : item
-//           ),
-//         };
-//       } else {
-//         return {
-//           ...state,
-//           selectedList: state.selectedList.map((item, index) =>
-//             index === action.index ? { ...item, planet: "", distance: 0 } : item
-//           ),
-//         };
-//       }
-
-//       return {
-//         ...state,
-//         selectedList: state.selectedList.map((item, index) =>
-//           index === action.index ? { ...item, planet: action.planetName } : item
-//         ),
-//       };
-
-//     case "selectedListVehical":
-//       const { index, vehicleName } = action;
-//       const tempSpeed = state.vehicleList.find(
-//         (item) => item.name === vehicleName
-//       );
-//       const updatedList = state.selectedList.map((item, i) =>
-//         i === index
-//           ? { ...item, vehicle: tempSpeed.name, speed: tempSpeed.speed }
-//           : item
-//       );
-//       const updatedVehicles = state.vehicleList.map((vehicle) => {
-//         if (vehicle.name === vehicleName) {
-//           if (vehicle.total_no > 0) {
-//             return { ...vehicle, total_no: vehicle.total_no - 1 };
-//           } else {
-//             return { ...vehicle, total_no: 0 };
-//           }
-//         } else {
-//           return { ...vehicle };
-//         }
-//       });
-//       return {
-//         ...state,
-//         selectedList: updatedList,
-//         vehicleList: updatedVehicles,
-//       };
-
-//     case "setToken":
-//       return {
-//         ...state,
-//         token: action.payload,
-//       };
-//     case "timeSet":
-//       return {
-//         ...state,
-//         timetake: action.payload,
-//       };
-//     case "setPlanetList":
-//       return {
-//         ...state,
-//         planetList: action.payload,
-//       };
-//     case "setVehicleList":
-//       return {
-//         ...state,
-//         vehicleList: action.payload,
-//       };
-//     case "resetDatabase":
-//       const { resetSelectedList, resetVehicleList } = action;
-//       return {
-//         ...state,
-//         vehicleList: resetVehicleList,
-//         selectedList: resetSelectedList,
-//       };
-//     default:
-//       return state;
-//   }
-// }
 
 /**
  * The reducer function handles state updates based on different actions.
@@ -323,7 +233,7 @@ export default function Problem() {
       enqueueSnackbar("Something went wrong, please refresh", {
         variant: "error",
       });
-      window.location.href = "/PageNotFound";
+      navigate("pagenotfound")
       console.log(e);
       return null;
     }
@@ -347,8 +257,8 @@ export default function Problem() {
         variant: "error",
       });
       localStorage.setItem("status", "false");
-      navigate("/Failed");
-      window.location.reload();
+      navigate("/failed");
+      
     } else if (result.status === "success") {
       // Search operation successful
       localStorage.setItem("status", "success");
@@ -378,13 +288,15 @@ export default function Problem() {
 
       return res.data;
     } catch (e) {
-      navigate("/PageNotFound");
       enqueueSnackbar(
         "Please Check Your Internet Connection and Refresh the Page",
         {
           variant: "error",
         }
-      );
+
+        );
+        localStorage.clear();
+        navigate("/pageNotFound");
       console.log(e);
       return null;
     }
@@ -404,7 +316,8 @@ export default function Problem() {
       enqueueSnackbar("Please Check Your Internet Connection", {
         variant: "error",
       });
-      navigate("/PageNotFound");
+      localStorage.clear();
+      navigate("/pagenotfound");
       return null;
     }
   };

@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
 import ufo from "../assets/ufo.gif";
 import RotateLeftIcon from "@mui/icons-material/RotateLeft";
 import win3 from "../assets/win3.png";
@@ -14,6 +15,7 @@ import "../style/Kudos.css";
  * Displays a congratulatory message and options to play again or go back home after finding the planet.
  */
 export default function KudosOnFind() {
+  const navigate = useNavigate();
   if (
     localStorage.getItem("planet_name") &&
     localStorage.getItem("status") === "success"
@@ -26,7 +28,7 @@ export default function KudosOnFind() {
             style={{ position: "absolute", left: 150 }}
             onClick={() => {
               localStorage.clear();
-              window.location.href = "/Problem";
+              navigate("/problem")
             }}
           >
             <RotateLeftIcon />
@@ -37,7 +39,7 @@ export default function KudosOnFind() {
             style={{ position: "absolute", right: 150 }}
             onClick={() => {
               localStorage.clear();
-              window.location.href = "/";
+              navigate("/")
             }}
           >
             <HomeIcon />

@@ -15,10 +15,10 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route  path="/Problem" element={<Problem />} />
-        <Route  path="/Kudos" element={<KudosOnFind />} />
-        <Route  path="/PageNotFound" element={<NotFound />} />
-        <Route  path="/Failed" element={<SearchFailed />} />
+        <Route  path="/problem" element={<Problem />} />
+        <Route  path="/kudos" element={<KudosOnFind />} />
+        <Route  path="/pagenotfound" element={<NotFound />} />
+        <Route  path="/failed" element={<SearchFailed />} />
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
       <Footer />

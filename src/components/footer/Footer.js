@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Box, Typography } from "@mui/material";
 import "../style/Footer.css"
 
@@ -7,13 +8,13 @@ import "../style/Footer.css"
  * Displays the footer text with a link to the coding problem.
  */
 export default function Footer() {
-
+  
   /**
    * Handles the click event on the Footer link.
    */
   const handleFooterLinkClick = () => {
     localStorage.clear();
-    window.location.href = "/";
+
   };
   return (
     <Box className="footer">
